@@ -20,6 +20,45 @@
 
 # Modul 1
 
+## 1
+Sebutkan web server yang digunakan pada "monta.if.its.ac.id"!
+```http.host==monta.if.its.ac.id```
+> Dengan menggunakan ekspresi tersebut, maka didapatkan hasil:
+
+![image](https://user-images.githubusercontent.com/103357229/192022850-3a94c6ee-7129-4733-9918-1867588207c1.png)
+
+> Dari hasil tersebut, kita mengklik kanan pada salah satu data -> follow -> TCP stream
+
+![image](https://user-images.githubusercontent.com/103357229/192023446-08f99e24-67de-43df-9f13-a8536dc1b834.png)
+
+> Dari proses di atas, maka akan muncul tampilan sebagai berikut:
+
+![image](https://user-images.githubusercontent.com/103357229/192023800-627a76a6-58c5-421a-a768-e9c49b5141b2.png)
+
+Dari data di atas, kita bisa mengetahui bahwa server yang digunakan adalah "nginx/1.10.3"
+
+## 2
+Ishaq sedang bingung mencari topik ta untuk semester ini , lalu ia datang ke website monta dan menemukan detail topik pada website “monta.if.its.ac.id” , judul TA apa yang dibuka oleh ishaq ?
+> Pertama kita melalukan display filter dengan ekspresi berikut <br>
+```http.host==monta.if.its.ac.id```
+> Didapatkan hasil sebagai berikut:
+
+![image](https://user-images.githubusercontent.com/103357229/192024891-eaaba41b-379d-4ece-ab7f-ea1805ddc7ac.png)
+
+> Pada data no 576, bisa kita lihat bahwa Ishaq mengakses detailTopik, yakni pada link berikut http://monta.if.its.ac.id/index.php/topik/detailTopik/194 . Berikut judul topik TA yang telah dibuka Ishaq
+
+![image](https://user-images.githubusercontent.com/103357229/192025346-e8600944-ae20-49c0-9889-d96007bc218a.png)
+
+## 3
+Filter sehingga wireshark hanya menampilkan paket yang menuju port 80!
+> Berdasar soal, maka kita diminta untuk membuat ekspresi display filter dengan destination port 80. Adapun, ekspresi yang digunakan adalah 
+```tcp.dstport==80 || udp.dstport==80```
+
+> Dari ekspresi didapati hasil:
+
+![image](https://user-images.githubusercontent.com/103357229/192025676-c8a5e724-ee3e-495c-84a2-6c64f330fa91.png)
+
+
 ## 7 
 Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian! <br>
 ``` src host <ip address>```<br>
