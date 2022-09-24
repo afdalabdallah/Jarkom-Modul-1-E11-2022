@@ -120,4 +120,5 @@ Setelah di decrypt, didapatkan bahwa isi filenya yaitu:<br>
 Temukan password rahasia (flag) dari organisasi bawah tanah yang disebutkan di atas!
 Berdasarkan stream pada nomor 8, didapatkan clue untuk password yaitu "Nama karakter anime yang kembar 5", maka dapat disimpulkan anime tersebut yaitu 5-Toubun no Hanayome, karena mereka kembar, mereka memiliki satu nama yang sama, yaitu "nakano". Oleh karena itu, "nakano" merupakan password untuk mendecrypt soal nomor 9.
 
- 
+ ## Kendala
+ Masih belum ada kendala yang berarti dalam pengerjaan praktikum modul 1 ini
